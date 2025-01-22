@@ -1,0 +1,27 @@
+---
+layout: meta
+---
+
+<body>
+    {% include core/header.html -%}
+
+    <div class="wrapper">
+        <div class="container">
+            
+            {{ content }}
+
+            <div class="content no-select" style="text-align: center;">
+                <div class="link-list">
+                    {% for link in site.links %}
+                        <a href="{{ link.link }}">{{ link.title | upcase }}</a>
+                    {% endfor %}
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+
+    {% include core/footer.html -%}
+</body>

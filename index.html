@@ -1,1 +1,55 @@
-hi
+---
+layout: default
+---
+
+<div class="content">
+	<h1>Become a Shaniac at Boston Gamedev Week!</h1>
+	<h2>May 4 - 11, 2025.</h2>
+	<h3>Come for us, stay for PAX.</h3>
+
+	<p><strong>What is Boston Gamedev Week?</strong></p>
+	<p>Boston Gamedev Week is a slate of events focused on learning, networking, and fun for game developers coinciding with PAX East. Coming anyways? Get in a little early and make some friends before you hit the showroom floor.</p>
+
+	<p style="font-size: 0.4em">TODO: Make this a calendar!</p>
+	{%- capture processed_now_date -%}
+        {{ "now" | date: '%s' }}
+    {%- endcapture -%}
+
+    {% assign display_upcoming_events = false %}
+    
+    {% for event in site.events %}
+
+        {%- capture processed_event_date -%}
+            {{ event.end_date | date: "%s" }}
+        {%- endcapture -%}
+
+        {% if processed_now_date < processed_event_date %}
+            
+            {% if display_upcoming_events == false %}
+                {% assign display_upcoming_events = true %}
+                <div class="section-header">UPCOMING EVENTS</div>
+                <div class="event-thumbnail-list element area no-select">
+            {% endif %}
+
+            {% include elements/event-thumbnail.html event=event %}
+
+        {% endif %}
+
+    {% endfor %}
+
+    {% if display_upcoming_events == true %}
+        </div>
+    {% endif %}
+
+    <div class="about">
+        <p>Boston Gamedev Week is hosted by Boston Game Dev, a 501(c)3 non-profit dedicated to supporting Boston-area game developers made up of three organizations:</p>
+
+        <p><strong>Boston Post Mortem</strong> is Boston’s official chapter of the International Game Developer’s Association. BPM has been doing game development meetups in the greater Boston area since the turn of the century. BPM hosts all manner of events, including talks from industry professionals, portfolio reviews, or sometimes just chill networking nights to chat with fellow game developers.
+
+        <p><strong>Boston Indies</strong> is a community of independent game developers in Massachusetts supporting hobbyists, professionals, artists, academics, and anyone else who's excited about making games.</p>
+
+        <p><strong>Game Audio Boston</strong> is the place for all game audio professionals in New England and those aspiring to become ones to meet, discuss, share knowledge, and grow together. As part of the Boston Game Dev group, we host monthly virtual and in-person meetups with guest speakers.</p>
+
+        <p><strong>Shane Denhardt</strong> is the man. Everyone should be a Shaniac!</p>
+    </div>
+</div>

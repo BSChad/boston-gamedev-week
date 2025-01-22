@@ -1,0 +1,17 @@
+<footer class="footer-content no-select" style="border-bottom: 0;">
+    <div class="footer-socials">
+        {% for social in site.socials -%}
+            <a href="{{ social.link }}" target="_blank"><img src="{{ social.icon }}"></a>
+        {% endfor -%}
+    </div>
+
+    <p>Questions? Hit us up at <a href="mailto:admin@bostonindies.com">admin@bostonindies.com</p>
+
+    {{ site.legal }}
+
+    <p style="text-align: center;">
+    website stolen from <a target="_blank" href="https://yukonmakes.games/">yukon</a> 😈
+    <br />
+    logo by <a target="_blank" href="https://kateolguin.com/about">Kate Olguin</a>
+    </p>
+</footer>
