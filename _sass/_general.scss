@@ -1,0 +1,140 @@
+html
+{
+    font-size: 16px;
+}
+
+body
+{
+    font-family: $fontBody;
+    color: white;
+    
+    background-color: #d52991;
+
+    background-repeat: repeat;
+    background-position: top;
+    background-size: 40rem;
+
+    margin: 0;
+
+    animation: animatedBackground 48s linear infinite;
+}
+
+@keyframes animatedBackground
+{
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0px -1024px;
+    }
+}
+
+h1, h2, h3, .section-header
+{
+    font-family: $fontHeader;
+    font-weight: bold;
+
+    margin-top: $spacingHalf;
+    margin-bottom: $spacingQuarter;
+}
+
+.section-header
+{
+    font-size: 2.5em;
+}
+
+a
+{
+    color: $colorYellow;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.wrapper
+{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing;
+
+    margin-top: $spacing;
+    margin-bottom: $spacing;
+}
+
+.container
+{
+    width: 1080px;
+
+    @include mobile
+    {
+        width: 100%;
+    }
+}
+
+.banner
+{
+    padding-top: $spacingHalf;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-information
+{
+    background-color: $colorYellow;
+    color: $colorBlack;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $spacingQuarter;
+}
+
+.content
+{    
+    padding: $spacing;
+
+    padding-top: $spacingHalf;
+    padding-bottom: $spacingHalf;
+
+    @include mobile
+    {
+        padding: $spacingHalf;
+    }
+}
+
+.cut-edges
+{
+    border: 0;
+    border-top: $spacing;
+    border-bottom: $spacing;
+    border-style: solid;
+    border-image-slice: 45% 0% fill;
+    border-image-repeat: repeat;
+    box-sizing: border-box;
+}
+
+.spacer
+{
+    padding-top: $spacing;
+}
+
+.element
+{
+    margin-top: $spacingHalf;
+    margin-bottom: $spacingHalf;
+}
+
+.area
+{
+    background-color: $colorPink;
+
+    border-radius: $spacingQuarter;
+
+    padding: $spacingQuarter;
+}

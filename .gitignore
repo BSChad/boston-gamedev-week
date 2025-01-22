@@ -1,0 +1,14 @@
+# Visual Studio cache directory
+.vs/
+
+# Jekyll Local Build stuff (epic)
+_site
+.DS_Store
+.jekyll
+.jekyll-metadata
+.bundle
+.sass-cache
+Gemfile
+Gemfile.lock
+node_modules
+package.json

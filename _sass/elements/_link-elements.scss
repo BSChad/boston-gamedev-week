@@ -1,0 +1,13 @@
+.link-list
+{
+    margin-top: $spacingHalf;
+    margin-bottom: $spacingHalf;
+
+    display: flex;
+    justify-content: center;
+    gap: $spacing;
+
+    font-family: $fontHeader;
+
+    font-size: 1.5rem;
+}

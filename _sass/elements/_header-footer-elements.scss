@@ -1,0 +1,26 @@
+.header-content, .footer-content
+{
+    padding: $spacingQuarter;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.footer-content
+{
+    padding-bottom: $spacing;
+}
+
+.header-logo
+{
+    width: 25rem;
+}
+
+.footer-socials img
+{
+    width: 3rem;
+    margin: 0.75rem;
+}
