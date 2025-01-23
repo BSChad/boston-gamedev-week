@@ -1,0 +1,15 @@
+<a href="{{ include.link }}" target="_blank" class="button expand no-select">
+    {% if include.icon %}
+    <img src="{{ include.icon }}">
+    {% endif %}
+
+    {% if include.google_icon %}
+    <span class="material-symbols-rounded material-symbols-48">
+        {{ include.google_icon }}
+    </span>
+    {% endif %}
+
+    {% if include.text %}
+    <div>{{ include.text | upcase }}</div>
+    {% endif %}
+</a>

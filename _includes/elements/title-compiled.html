@@ -1,0 +1,9 @@
+{%- assign title_compiled = page.title | upcase -%}
+
+{%- if page.emoji -%}
+    {%- capture title_compiled %}{{ page.title | upcase }} {{ page.emoji }}{% endcapture -%}
+{%- endif -%}
+
+{%- assign title_compiled = title_compiled | strip -%}
+
+{{ title_compiled }}

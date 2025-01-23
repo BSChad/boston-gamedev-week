@@ -1,0 +1,21 @@
+<div class="bullet-point">
+    {% if include.google_icon %}
+        <span class="material-symbols-rounded material-symbols-24 no-select">
+            {{ include.google_icon }}
+        </span>
+    {% endif %}
+
+    {% if include.icon %}
+        <img class="no-select" src="{{ include.icon }}">
+    {% endif %}
+
+    
+
+    {% if include.link %}
+        <a href="{{ include.link }}" target="_blank">
+    {% endif %}
+    <p>{{ include.text | strip }}</p>
+    {% if include.link %}
+        </a>
+    {% endif %}
+</div>
