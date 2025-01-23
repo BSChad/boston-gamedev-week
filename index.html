@@ -15,7 +15,7 @@ layout: default
         {{ "now" | date: '%s' }}
     {%- endcapture -%}
 
-    {% assign bgw_start_date '05-04-2025 00:00:00 America/New York' %}
+    {% assign bgw_start_date = '05-04-2025 00:00:00 America/New York' %}
 
     {% for event in site.events %}
 
@@ -27,10 +27,10 @@ layout: default
             {{ event.end_date | date: "%s" }}
         {%- endcapture -%}
 
-        {% if bgw_start_date < processed_event_date %}
-	   {% assign bgw_start_date = processed_event_data %}
+        {% if bgw_start_date < processed_start_date %}
+	   {% assign bgw_start_date = processed_start_date %}
 
-                <div class="section-header">DAY NAME HERE</div>
+	   <div class="section-header">{% processed_start_date | date: "%A" %}</div>
                 <div class="event-thumbnail-list element area no-select">
 
             {% include elements/event-thumbnail.html event=event %}
