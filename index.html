@@ -15,21 +15,23 @@ layout: default
         {{ "now" | date: '%s' }}
     {%- endcapture -%}
 
-    {% assign display_upcoming_events = false %}
-    
+    {% assign bgw_start_date '05-04-2025 00:00:00 America/New York' %}
+
     {% for event in site.events %}
 
-        {%- capture processed_event_date -%}
+        {%- capture processed_start_date -%}
+            {{ event.start_date | date: "%s" }}
+        {%- endcapture -%}
+
+	{% capture processed_end_date -%}
             {{ event.end_date | date: "%s" }}
         {%- endcapture -%}
 
-        {% if processed_now_date < processed_event_date %}
-            
-            {% if display_upcoming_events == false %}
-                {% assign display_upcoming_events = true %}
-                <div class="section-header">UPCOMING EVENTS</div>
+        {% if bgw_start_date < processed_event_date %}
+	   {% assign bgw_start_date = processed_event_data %}
+
+                <div class="section-header">DAY NAME HERE</div>
                 <div class="event-thumbnail-list element area no-select">
-            {% endif %}
 
             {% include elements/event-thumbnail.html event=event %}
 
