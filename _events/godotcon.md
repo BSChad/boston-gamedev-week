@@ -20,6 +20,8 @@ information:
    link: "https://talks.godotengine.org/godotcon-us-2025/cfp"
 ---
 
-Get your Godot on at tge Microsoft NERD for talks, workshops, and networking.
+Get your Godot on at the Microsoft NERD for three days of talks, workshops, and networking. Brought to you by The Godot Foundation and the Boston Godot User Group, this is a ticketed event.
 
 - **Godot Foundation** is a non-profit dedicated to maintaining the open source Godot Engine.
+
+- **Boston Godot User Group**, BoGo for short, is a monthly meetup dedicated to helping Godot users to connect and learn. Each month we do talks, show off our work, and eat pizza.

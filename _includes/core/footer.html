@@ -1,11 +1,13 @@
 <footer class="footer-content no-select" style="border-bottom: 0;">
-    <div class="footer-socials">
+	{% if site.socials and site.socials.size != 0 %}
+	<div class="footer-socials">
         {% for social in site.socials -%}
             <a href="{{ social.link }}" target="_blank"><img src="{{ social.icon }}"></a>
         {% endfor -%}
     </div>
+    {% endif %}
 
-    <p>Questions? Hit us up at <a href="mailto:admin@bostonindies.com">shane@shane.shane</p>
+    <p>Questions? Got an event that should be on the page? Hit us up at <a href="mailto:admin@bostonindies.com">shane@shane.shane</p>
 
     {{ site.legal }}
 
