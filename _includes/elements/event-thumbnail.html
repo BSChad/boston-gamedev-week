@@ -9,7 +9,7 @@
                 <span class="material-symbols-rounded material-symbols-24">
                     event
                 </span>
-                {{ include.event.date | date: "%A, %B %e at %I:%M %P %Z" }}</div>
+                {{ include.day | date: "%A, %B %e" }} at {{ include.event.date | date: "%I:%M %P" }}</div>
         </div>
 
         <div class="event-thumbnail-information-right">

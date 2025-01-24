@@ -10,18 +10,18 @@ layout: meta
             
             {{ content }}
 
-            <div class="content no-select" style="text-align: center;">
-                <div class="link-list">
-                    {% for link in site.links %}
-                        <a href="{{ link.link }}">{{ link.title | upcase }}</a>
-                    {% endfor %}
+            {% if site.links and site.links.size != 0 %}
+                <div class="content no-select" style="text-align: center;">
+                    <div class="link-list">
+                        {% for link in site.links %}
+                            <a href="{{ link.link }}">{{ link.title | upcase }}</a>
+                        {% endfor %}
+                    </div>
+
                 </div>
+                {% endif %}
 
-            </div>
-            
-        </div>
-        
+        </div>      
     </div>
-
     {% include core/footer.html -%}
 </body>
