@@ -18,8 +18,8 @@ layout: default
         {{ site.week_start | date: '%s' }}
     {%- endcapture -%}
 
-    {% for day in (0..6) %}
-		{% assign current_day = site.week_start | add_day: day %}
+    {% for day_num in (0..6) %}
+		{% assign current_day = site.week_start | add_day: day_num %}
     	{% assign events_for_day = site.events | between_dates: current_day %}
     	{% if events_for_day and events_for_day.size != 0 %}
     		<div class="section-header">{{ current_day | date: "%A" }}</div>
