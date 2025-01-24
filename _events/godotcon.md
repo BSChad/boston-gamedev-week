@@ -5,12 +5,13 @@ title: "GodotCon Boston"
 
 announcement_date: 2024-04-16 10:00:00 America/New_York
 date: 2025-05-05 08:00:00 America/New_York
+start_date: 2025-05-05 08:00:00 America/New_York
 end_date: 2025-05-07 18:00:00 America/New_York
 
 location: microsoft-nerd
 location_room: "Mezzanine"
 
-banner: "godotcon-boston.jpg"
+banner: "godotcon-boston-2025.webp"
 
 information:
  - index: godot-engine

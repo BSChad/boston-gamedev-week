@@ -1,10 +1,10 @@
 title: "BOSTON GAMEDEV WEEK"
 about: "Get a full week of gamedev goodness here on the bay. Coinciding with PAX East, Boston Gamedev Week is a slate of events focused on developers."
-featured_video: "uBfi7h6qEMQ"
 
 markdown: kramdown
 future: true
 timezone: America/New_York
+week_start: 2025-05-04 00:00:00 America/New_York
 
 url: https://www.gamedev.boston
 
