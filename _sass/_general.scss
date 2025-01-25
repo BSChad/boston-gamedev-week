@@ -10,6 +10,7 @@ body
     
     background-color: #1e90ff;
 
+    background: url('assets/resources/TileDpadFacePad.jpg')
     background-repeat: repeat;
     background-position: top;
     background-size: 40rem;
@@ -69,6 +70,8 @@ img
 .container
 {
     width: 1080px;
+
+    background-color: $colorOffWhite;
 
     @include mobile
     {

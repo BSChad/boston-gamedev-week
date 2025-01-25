@@ -7,7 +7,7 @@
                 <span class="material-symbols-outlined material-symbols-20">
                     schedule
                 </span>
-                {{ include.event.date | date: "%I:%M %P" }}</div>
+		{{ include.event.date | date: "%I:%M %P" }} - {{ include.event.end_date | date: "%I:%M %P" }}</div>
         </div>
     </div>
 </a>
