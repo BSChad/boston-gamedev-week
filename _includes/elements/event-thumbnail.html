@@ -1,22 +1,13 @@
 <a href="{{ include.event.url }}" class="event-thumbnail expand no-select">
-    <img src="assets/banners/{{ include.event.banner }}">
-
     <div class="event-thumbnail-information">
-        
+        <img src="assets/banners/{{ include.event.banner }}">
         <div class="event-thumbnail-information-left">
             <div class="event-thumbnail-title">{{ include.event.title | upcase }}</div>
             <div class="event-thumbnail-date">
-                <span class="material-symbols-rounded material-symbols-24">
-                    event
+                <span class="material-symbols-outlined material-symbols-20">
+                    schedule
                 </span>
-                {{ include.day | date: "%A, %B %e" }} at {{ include.event.date | date: "%I:%M %P" }}</div>
+                {{ include.event.date | date: "%I:%M %P" }}</div>
         </div>
-
-        <div class="event-thumbnail-information-right">
-            <span class="material-symbols-rounded material-symbols-24">
-                double_arrow
-            </span>
-        </div>
-
     </div>
 </a>
