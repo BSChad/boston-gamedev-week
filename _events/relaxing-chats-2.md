@@ -8,8 +8,7 @@ date: 2025-05-09 10:00:00 America/New_York
 start_date: 2025-05-09 10:00:00 America/New_York
 end_date: 2025-05-09 18:00:00 America/New_York
 
-location: non-profit-center
-location_room: "All"
+location: mightier
 
 banner: "relaxing-chats.png"
 

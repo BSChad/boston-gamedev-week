@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% if page.banner %}
+    <div class="banner no-select">
+        <img src="/assets/banners/{{ page.banner }}">
+    </div>
+{% endif %}
+
+<div class="content">
+    <div class="section-header">{{ page.title | upcase }}</div>
+
+    {{ content }}
+</div>

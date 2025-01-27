@@ -1,0 +1,100 @@
+---
+layout: page
+---
+
+
+{% assign processed_location = "" %}
+{% assign processed_location_without_room = "" %}
+
+{% if page.location_room %}
+    {% assign processed_location = processed_location | append: page.location_room | append: ", " %}
+{% endif %}
+
+{% for current_site_location in site.locations %}
+    {% if current_site_location.index == page.location %}
+        {% assign processed_location_without_room = current_site_location.title | append: ", " | append: current_site_location.address %}
+        {% assign processed_location = processed_location | append: processed_location_without_room %}
+        {% capture processed_location_link %}https://maps.google.com/?q={{ current_site_location.address }}{% endcapture %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+
+
+{% assign processed_date = page.date | date: "%A, %B %e at %I:%M %P %Z" %}
+
+{% capture processed_date_link %}
+https://calendar.google.com/calendar/render?action=TEMPLATE
+&text={{ page.title }}
+&details={{ page.excerpt | newline_to_br | replace: "<br />", "" | strip | url_encode }}<br>For more information, visit: {{site.url}}{{ page.url }}
+&location={{ processed_location_without_room | strip }}
+&dates={{ page.date | date: "%Y%m%dT%H%M%S" }}/{{ page.end_date | date: "%Y%m%dT%H%M%S" }}
+&ctz=America/New_York
+{% endcapture %}
+
+<div class="bullet-point-list">
+    {% include elements/bullet-point.html google_icon="event" text=processed_date %}
+    {% include elements/bullet-point.html google_icon="location_on" text=processed_location %}
+</div>
+
+
+
+{{ content }}
+
+
+
+{%- capture processed_now_date -%}
+    {{ "now" | date: '%s' }}
+{%- endcapture -%}
+
+{%- capture processed_event_date -%}
+    {{ page.end_date | date: "%s" }}
+{%- endcapture -%}
+
+{% if processed_now_date < processed_event_date %}
+
+    <div class="button-list">
+        {% for info in page.information %}
+            {% for site_info in site.information %}
+                {% if site_info.index == info.index %}
+                    {% include elements/button.html text=site_info.button_text link=info.link %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+
+        {% include elements/button.html google_icon="calendar_add_on" link=processed_date_link %}
+        {% include elements/button.html google_icon="directions" link=processed_location_link %}
+    </div>
+
+{% else %}
+
+    <div class="element area no-select" style="text-align: center;">
+        <div class="section-header" style="margin: 0 !important;">THIS EVENT HAS ENDED!</div>
+    </div>
+
+{% endif %}
+
+<div class="spacer"></div>
+
+
+
+{% for current_site_location in site.locations %}
+    {% if current_site_location.index == page.location %}
+        <div class="section-header">{{ current_site_location.title | upcase }}</div>
+        {{ current_site_location.content | markdownify }}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+
+
+{% for info in page.information %}
+    {% for site_info in site.information %}
+        {% if site_info.index == info.index %}
+            {% if site_info.content != "" %}
+                <div class="section-header">{{ site_info.title | upcase }}</div>
+                {{ site_info.content | markdownify }}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}

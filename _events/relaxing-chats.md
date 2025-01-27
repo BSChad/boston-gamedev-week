@@ -9,7 +9,6 @@ start_date: 2025-05-06 10:00:00 America/New_York
 end_date: 2025-05-06 18:00:00 America/New_York
 
 location: non-profit-center
-location_room: "All"
 
 banner: "relaxing-chats.png"
 

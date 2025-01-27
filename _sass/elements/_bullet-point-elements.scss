@@ -2,7 +2,6 @@
 {
     display: flex;
     flex-wrap: wrap;
-    gap: $spacingQuarter;
     
     margin-top: $spacingHalf;
     margin-bottom: $spacingHalf;
@@ -18,11 +17,7 @@
 
     width: fit-content;
 
-    background-color: $colorPink;
-
-    border-radius: $spacingQuarter;
-
-    padding: $spacingQuarter;
+    padding-left: $spacingQuarter;
     padding-right: $spacingHalf;
 }
 
@@ -34,4 +29,10 @@
 .bullet-point a
 {
     color: white
+}
+
+.bullet-point p
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
