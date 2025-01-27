@@ -27,6 +27,11 @@
 {
     width: 1080px;
 
+    @include mobile
+    {
+        width: 100%;
+    }
+
     text-align: left;
 }
 
