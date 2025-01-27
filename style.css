@@ -259,6 +259,11 @@ img {
   width: 1080px;
   text-align: left;
 }
+@media screen and (max-width: 1152px) {
+  .header-inner {
+    width: 100%;
+  }
+}
 
 .header-logo {
   width: auto;
