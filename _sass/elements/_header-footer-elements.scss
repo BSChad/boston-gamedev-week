@@ -1,22 +1,44 @@
 .header-content, .footer-content
 {
+    color: white;
+    background-color: $colorBlue;
+
+    min-height: 50px;
     padding: $spacingQuarter;
 
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+}
 
-    text-align: center;
+.header-content
+{
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .footer-content
 {
-    padding-bottom: $spacing;
+    padding-bottom: $spacingHalf;
+
+    filter: drop-shadow(2px -4px 6px black);
+}
+
+.header-inner
+{
+    width: 1080px;
+
+    text-align: left;
 }
 
 .header-logo
 {
-    width: 25rem;
+    width: auto;
+    height: 100px;
+}
+
+.header-content p
+{
+    margin: 0;
 }
 
 .footer-socials img

@@ -3,26 +3,22 @@ layout: default
 ---
 
 <div class="content">
-	<h1>Become a Shaniac at Boston Gamedev Week!</h1>
-	<h2>May 4 - 11, 2025.</h2>
-	<h3>Come for us, stay for PAX.</h3>
-
-	<p><strong>What is Boston Gamedev Week?</strong></p>
+	<h1 class="subtitle">BOSTON GAMEDEV WEEK 2025! LET'S HANG BEFORE PAX!</h1>
+	<h2 class="subtitle">MAY 4 - 11, 2025.</h2>
 	<p>Boston Gamedev Week is a slate of events focused on learning, networking, and fun for game developers coinciding with PAX East. Coming anyways? Get in a little early and make some friends before you hit the showroom floor.</p>
 
+	<h1>Schedule</h1>
 	{%- capture processed_now_date -%}
         {{ "now" | date: '%s' }}
     {%- endcapture -%}
-
     {%- capture processed_week_start_date -%}
         {{ site.week_start | date: '%s' }}
     {%- endcapture -%}
-
     {% for day_num in (0..6) %}
 		{% assign current_day = site.week_start | add_day: day_num %}
     	{% assign events_for_day = site.events | between_dates: current_day %}
     	{% if events_for_day and events_for_day.size != 0 %}
-    		<div class="section-header">{{ current_day | date: "%A" }}</div>
+    		<div class="section-header">{{ current_day | date: "%A, %B %-d" }}</div>
     		<div class="event-thumbnail-list element area no-select">
 		    {% for event in events_for_day %}
 		        {%- capture processed_start_date -%}
@@ -40,6 +36,7 @@ layout: default
     {% endfor %}
 
     <div class="about">
+    	<h1>About</h1>
         <p>Boston Gamedev Week is hosted by Boston Game Dev, a 501(c)3 non-profit dedicated to supporting Boston-area game developers made up of three organizations:</p>
 
         <p><strong>Boston Post Mortem</strong> is Boston’s official chapter of the International Game Developer’s Association. BPM has been doing game development meetups in the greater Boston area since the turn of the century. BPM hosts all manner of events, including talks from industry professionals, portfolio reviews, or sometimes just chill networking nights to chat with fellow game developers.
