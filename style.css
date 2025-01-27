@@ -98,7 +98,7 @@ img {
 }
 
 .spacer {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .element {
@@ -114,7 +114,6 @@ img {
 .bullet-point-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -125,9 +124,7 @@ img {
   gap: 1rem;
   font-weight: bold;
   width: fit-content;
-  background-color: #d52991;
-  border-radius: 1rem;
-  padding: 1rem;
+  padding-left: 1rem;
   padding-right: 2rem;
 }
 
@@ -137,6 +134,11 @@ img {
 
 .bullet-point a {
   color: white;
+}
+
+.bullet-point p {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .button-list {
