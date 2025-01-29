@@ -198,6 +198,11 @@ img {
   height: 110px;
   width: auto;
 }
+@media screen and (max-width: 1152px) {
+  .event-thumbnail img {
+    height: 75px;
+  }
+}
 
 .event-thumbnail-information {
   display: flex;
