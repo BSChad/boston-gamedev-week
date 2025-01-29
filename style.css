@@ -179,7 +179,7 @@ img {
 .event-thumbnail-list {
   grid-template-columns: repeat(2, minmax(min(10px, 100%), 1fr));
   display: grid;
-  gap: 2rem;
+  gap: 0.75rem;
 }
 @media screen and (max-width: 1152px) {
   .event-thumbnail-list {
@@ -195,7 +195,7 @@ img {
 
 .event-thumbnail img {
   border-radius: 1rem;
-  height: 60px;
+  height: 110px;
   width: auto;
 }
 
@@ -203,6 +203,7 @@ img {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  align-items: center;
   padding: 1rem;
   background-color: #f0e921;
   color: #231f20;
