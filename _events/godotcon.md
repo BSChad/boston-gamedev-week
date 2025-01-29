@@ -11,7 +11,7 @@ end_date: 2025-05-07 18:00:00 America/New_York
 location: microsoft-nerd
 location_room: "Mezzanine"
 
-banner: "godotcon-boston-2025.webp"
+banner: "godotcon-boston.png"
 
 information:
  - index: godot-engine
