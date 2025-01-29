@@ -34,7 +34,9 @@ https://calendar.google.com/calendar/render?action=TEMPLATE
 
 <div class="bullet-point-list">
     {% include elements/bullet-point.html google_icon="event" text=processed_date %}
-    {% include elements/bullet-point.html google_icon="location_on" text=processed_location %}
+    {% if processed_location and processed_location != empty %}
+        {% include elements/bullet-point.html google_icon="location_on" text=processed_location %}
+    {% endif %}
 </div>
 
 

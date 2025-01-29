@@ -8,10 +8,7 @@ date: 2025-05-09 12:00:00 America/New_York
 start_date: 2025-05-09 12:00:00 America/New_York
 end_date: 2025-05-09 15:00:00 America/New_York
 
-location: non-profit-center
-location_room: "All"
-
-banner: "relaxing-chats.png"
+banner: "GAB_Image.jpg"
 
 information:
  - index: chats-signup
