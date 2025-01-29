@@ -45,7 +45,7 @@ h1, h2, h3, .section-header {
 }
 
 a {
-  color: #f0e921;
+  color: #d52991;
 }
 
 img {
@@ -285,6 +285,10 @@ img {
 .footer-socials img {
   width: 3rem;
   margin: 0.75rem;
+}
+
+.footer-content a {
+  color: #f0e921;
 }
 
 .link-list {
