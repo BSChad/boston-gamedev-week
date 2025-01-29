@@ -28,7 +28,7 @@ Relaxing Chats East is a series of topic-driven roundtable discussions consistin
 We have rented several rooms near South Station, a few blocks from the convention center. We will tell you where to go after you have signed up for a chat on the schedule. This event is not open to the general public. You must sign up  for the schedule and receive an invitation. 
 
 ### Cost
-It’s free! But don’t hesitate to donate to Boston Gamedev if you want to support stuff like this in the future. Also, your donation is tax deductible! 
+It’s free! But don’t hesitate to [donate to Boston Game Dev](https://secure.givelively.org/donate/boston-game-dev-inc/boston-game-dev) if you want to support stuff like this in the future. Also, your donation is tax deductible! 
 
 ### Date 
 May 6th and May 9th
