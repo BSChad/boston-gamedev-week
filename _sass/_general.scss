@@ -127,9 +127,10 @@ img
 
 .area
 {
-    background-color: $colorYellow;
+    background-color: $colorOffWhite;
 
-    border-radius: $spacingQuarter;
+    border: #15599b solid 4px;
+    box-shadow: 6px 6px 0px 2px #f0e921;
 
     padding: $spacingQuarter;
 }
