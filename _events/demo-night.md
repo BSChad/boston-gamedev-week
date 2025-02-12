@@ -12,13 +12,15 @@ location: mit-open-space
 
 banner: "demo-night.png"
 
+excerpt: Join us for demos and drinks at Demo Night, hosted by Boston Indies.
+
 information:
  - index: boston-indies
    link: "https://bostonindies.com"
- - index: meetup
+ - index: meetup-link
    link: "https://www.meetup.com"
 ---
 
-Join us for demos and drinks at Demo Night, hosted by Boston Indies. Bring your demo to show off or just come to hang out with other game devs in a relaxed environment. This is a free, open event thanks to our lovely sponsors. (This could be you! (Let us known if you'd like to help!)[mailto:admin@bostonindies.com])
+Join us for demos and drinks at Demo Night, hosted by Boston Indies. Bring your demo to show off or just come to hang out with other game devs in a relaxed environment. This is a free, open event thanks to our lovely sponsors. ([This could be you](mailto:admin@bostonindies.com)!)
 
-- **Boston Indies** is the indie focused arm of Boston Game Dev. Each month we do talks, show off our work, or enjoy coffee or drinks in service of growing Boston's independent game development community.
+**Boston Indies** is the indie focused arm of Boston Game Dev. Each month we do talks, show off our work, or enjoy coffee or drinks in service of growing Boston's independent game development community.

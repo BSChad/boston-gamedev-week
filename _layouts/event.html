@@ -40,9 +40,7 @@ https://calendar.google.com/calendar/render?action=TEMPLATE
 </div>
 
 
-
-{{ content }}
-
+{{ content | markdownify }}
 
 
 {%- capture processed_now_date -%}
