@@ -10,11 +10,11 @@ end_date: 2025-05-07 22:30:00 America/New_York
 
 banner: "make-games-make-friends.png"
 
+location: flat-top-johnnys
+
 excerpt: Whether you just finished with Demo Night or GodotCon, join us for drinks and laid back conversation, located adjacent to the MIT Open Space (a five minute walk from the NERD.)
 ---
 
 Whether you just finished with [Demo Night](demo-night) or [GodotCon](godotcon), join us for drinks and laid back conversation.
 
-Hosted by Boston Game Dev, this is a casual hangout at our favorite local haunt. They've got pinball, pool, indoor space, and outdoor space. They've got a full food menu.
-
-- **Boston Indies** is the indie focused arm of Boston Game Dev. Each month we do talks, show off our work, or enjoy coffee or drinks in service of growing Boston's independent game development community.
+Hosted by Boston Game Dev, the main purpose of this group is for anyone involved in the creation of games professionally to connect in person in a laid back and chill atmosphere. Art? Marketing? Audio? Programming? QA? Come hang! They've got pinball, pool, indoor space, and outdoor space; a full food menu and drinks.

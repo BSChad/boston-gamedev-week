@@ -34,6 +34,9 @@ It’s free! But don’t hesitate to [donate to Boston Game Dev](https://secure.
 May 6th and May 9th
 
 ### How do I RSVP? 
-The Sign up schedule will be released In late February.
-Invitations will be sent in a later email.
+<span style="color: #d52991;">**Sign up now by April 1st to get yourself into a chat.**</span> After that date, we will send out invites to let you know which chats you are invited to attend, and exactly where they are. All chats are within walking distance of south station.
+
+<https://docs.google.com/forms/d/e/1FAIpQLSfs4qKB7bDsKJ2ADMd2CY_UxWFHY6cSDLmIGf-VyWUcvAYuug/viewform>
+
+Our space is limited. Depending on how many people apply it's possible not everyone will get to attend. That said, we will attempt to make sure everyone who applies gets to go to at least 1 chat.
 
