@@ -14,24 +14,32 @@ layout: default
     {%- capture processed_week_start_date -%}
         {{ site.week_start | date: '%s' }}
     {%- endcapture -%}
-    {% for day_num in (0..6) %}
+    {% for day_num in (0..7) %}
 		{% assign current_day = site.week_start | add_day: day_num %}
+        {% assign pax_day = day_num | minus: site.pax_day_num %}
     	{% assign events_for_day = site.events | between_dates: current_day %}
     	{% if events_for_day and events_for_day.size != 0 %}
-    		<div class="section-header">{{ current_day | date: "%A, %B %-d" }}</div>
-    		<div class="event-thumbnail-list element area no-select">
-		    {% for event in events_for_day %}
-		        {%- capture processed_start_date -%}
-		            {{ event.date | date: "%s" }}
-		        {%- endcapture -%}
+            <div class="section">
+        		<div class="section-header">{{ current_day | date: "%A, %B %-d" }}</div>
+                {% if pax_day == 0 %}
+                    <div class="pax-day">(PAX Setup)</div>
+                {% elsif pax_day > 0 %}
+                    <div class="pax-day">(PAX Day {{ pax_day }})</div>
+                {% endif %}
+        		<div class="event-thumbnail-list element area no-select">
+    		    {% for event in events_for_day %}
+    		        {%- capture processed_start_date -%}
+    		            {{ event.date | date: "%s" }}
+    		        {%- endcapture -%}
 
-				{%- capture processed_end_date -%}
-		            {{ event.end_date | date: "%s" }}
-		        {%- endcapture -%}
+    				{%- capture processed_end_date -%}
+    		            {{ event.end_date | date: "%s" }}
+    		        {%- endcapture -%}
 
-	            {% include elements/event-thumbnail.html event=event day=current_day %}
-		    {% endfor %}
-	        </div>
+    	            {% include elements/event-thumbnail.html event=event day=current_day %}
+    		    {% endfor %}
+    	        </div>
+            </div>
 	    {% endif %}
     {% endfor %}
 
