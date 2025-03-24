@@ -39,9 +39,23 @@ h1, h2, h3, .section-header {
   margin-bottom: 5px;
 }
 
+.section {
+  position: relative;
+  width: 100%;
+}
+
 .section-header {
+  display: inline;
   font-size: 1.25em;
   margin-bottom: 0;
+}
+
+.pax-day {
+  display: inline;
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 a {
