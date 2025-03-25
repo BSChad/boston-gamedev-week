@@ -4,7 +4,7 @@ layout: default
 
 <div class="content">
 	<h1 class="subtitle">BOSTON GAMEDEV WEEK 2025! LET'S HANG BEFORE PAX!</h1>
-	<h2 class="subtitle">MAY 4 - 11, 2025.</h2>
+	<h2 class="subtitle">MAY 5 - 11, 2025.</h2>
 	<p>Boston Gamedev Week is a slate of events focused on learning, networking, and fun for game developers coinciding with PAX East. Coming anyways? Get in a little early and make some friends before you hit the showroom floor.</p>
 
 	<h1>Schedule</h1>
@@ -14,7 +14,7 @@ layout: default
     {%- capture processed_week_start_date -%}
         {{ site.week_start | date: '%s' }}
     {%- endcapture -%}
-    {% for day_num in (0..7) %}
+    {% for day_num in (0..5) %}
 		{% assign current_day = site.week_start | add_day: day_num %}
         {% assign pax_day = day_num | minus: site.pax_day_num %}
     	{% assign events_for_day = site.events | between_dates: current_day %}

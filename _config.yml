@@ -4,8 +4,8 @@ about: "Get a full week of gamedev goodness here on the bay. Coinciding with PAX
 markdown: kramdown
 future: true
 timezone: America/New_York
-week_start: 2025-05-04 00:00:00 America/New_York
-pax_day_num: 3
+week_start: 2025-05-05 00:00:00 America/New_York
+pax_day_num: 2
 
 url: https://www.gamedev.boston
 
