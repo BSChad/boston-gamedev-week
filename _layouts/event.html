@@ -14,7 +14,8 @@ layout: page
     {% if current_site_location.index == page.location %}
         {% assign processed_location_without_room = current_site_location.title | append: ", " | append: current_site_location.address %}
         {% assign processed_location = processed_location | append: processed_location_without_room %}
-        {% capture processed_location_link %}https://maps.google.com/?q={{ current_site_location.address }}{% endcapture %}
+
+        {% capture processed_location_link %}https://maps.google.com/?q={% if current_site_location.maps %}{{ current_site_location.maps }}{% else %}{{ current_site_location.address }}{% endif %}{% endcapture %}
         {% break %}
     {% endif %}
 {% endfor %}

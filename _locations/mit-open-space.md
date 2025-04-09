@@ -1,6 +1,7 @@
 ---
 index: "mit-open-space"
 title: "MIT Open Space"
+maps: "Kendall/MIT Open Space"
 address: "292 Main St, Cambridge, MA 02142"
 ---
 

@@ -1,6 +1,7 @@
 ---
 index: "flat-top-johnnys"
 title: "Flat Top Johnny's"
+maps: "Flat Top Johnny's"
 address: "1 Kendall Sq, Cambridge, MA 02139-1520"
 ---
 
