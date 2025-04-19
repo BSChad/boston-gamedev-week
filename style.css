@@ -263,6 +263,28 @@ img {
   height: 2.5rem;
 }
 
+.content thead {
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.content table {
+  border: solid 2px #15599c;
+  border-radius: 3px;
+  border-collapse: collapse;
+}
+
+.content tbody {
+  border: solid 1px black;
+}
+
+.content td:first-child, .content th:first-child {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .header-content, .footer-content {
   color: white;
   background-color: #15599c;
