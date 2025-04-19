@@ -4,7 +4,7 @@ require 'date'
 
 module BetweenDateFilters
 	def between_dates(events, date)
-		events.reject { |event| DateTime.parse(event.start_date).to_date > date.to_date or DateTime.parse(event.end_date).to_date < date.to_date }
+		events.reject { |event| DateTime.parse(event.start_date).to_date > date.to_date or DateTime.parse(event.end_date).to_date < date.to_date or (DateTime.parse(event.end_date).to_date == date.to_date and DateTime.parse(event.end_date).hour < 3) }
 	end
 end
 
