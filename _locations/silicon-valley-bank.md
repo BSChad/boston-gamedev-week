@@ -8,7 +8,7 @@ Silicon Valley Bank. Meet up. Make a deposit.
 
 ### Parking
 
-Just park your ride in the lobby, I'm sure no one will care.
+There is parking at the Hayward lot (directly under the Open Space) but we recommend taking public transit. MIT is a short walk from the Kendall Square Red Line station.
 
 ### Harassment Policy
 
