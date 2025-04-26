@@ -34,7 +34,7 @@ Join Game Audio Boston and Audiokinetic for an afternoon of hanging out and inte
 |Post-talk beer and hang|
 
 
-Tickets are limited, and [you must RSVP to enter](tickets are limited and you'll need one to attend"? https://www.eventbrite.com/e/game-audio-hang-at-boston-gamedev-week-pax-weekend-tickets-1323696645299?aff=oddtdtcreator). If you're no longer able to make it, please help someone on the waitlist out by cancelling your ticket.
+Tickets are limited, and [you must RSVP to enter](https://www.eventbrite.com/e/game-audio-hang-at-boston-gamedev-week-pax-weekend-tickets-1323696645299?aff=oddtdtcreator) tickets are limited and you'll need one to attend". If you're no longer able to make it, please help someone on the waitlist out by cancelling your ticket.
 
 In town for Boston Gamedev Week/PAX East? Just a short walk from the expo hall, join Game Audio Boston and Audiokinetic for a chill afternoon with game audio friends. There will be talks! There will be (free) light catering! There will be (paid) beer! Come hang! See the schedule below for what we have in store.
 
