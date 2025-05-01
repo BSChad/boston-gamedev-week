@@ -10,7 +10,7 @@ end_date: 2025-05-09 15:00:00 America/New_York
 
 location: harpoon
 
-banner: "game_audio_hang.avif"
+banner: "gab-meetup.png"
 
 information:
  - index: chats-signup
