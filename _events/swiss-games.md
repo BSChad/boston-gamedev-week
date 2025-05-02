@@ -4,8 +4,8 @@ layout: event
 title: "Swiss Mixer"
 
 announcement_date: 2024-04-16 10:00:00 America/New_York
-date: 2025-05-07 18:30:00 America/New_York
-start_date: 2025-05-07 18:30:00 America/New_York
+date: 2025-05-07 17:30:00 America/New_York
+start_date: 2025-05-07 17:30:00 America/New_York
 end_date: 2025-05-07 20:00:00 America/New_York
 
 location: swissnex
