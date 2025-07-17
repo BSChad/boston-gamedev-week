@@ -9,9 +9,10 @@ body
     color: $colorBlue;
     
     background-color: #1e90ff;
-    background: url('assets/resources/TileDpadFacePad.jpg');
+    background: url('assets/resources/BGD_tileable_background_02.png');
     background-repeat: repeat;
     background-position: top;
+    background-size: 620px 620px;
 
     display: flex;
     flex-direction: column;

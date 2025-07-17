@@ -1,0 +1,30 @@
+#mlb2-25949238.ml-form-embedContainer .ml-form-embedWrapper.embedForm
+{
+    max-width: 100% !important;
+    margin-top: 2rem !important;
+}
+
+#mlb2-25949238.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody, #mlb2-25949238.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody
+{
+    padding: 0 !important;
+}
+
+#mlb2-25949238.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4, #mlb2-25949238.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4
+{
+    color: $colorBlue !important;
+    text-align: left !important;
+
+    font-family: "rl aqva", sans-serif !important;
+    font-weight: bold !important;
+}
+
+#mlb2-25949238.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p, #mlb2-25949238.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p, #mlb2-25949238.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent.privacy-policy p
+{
+    color: $colorBlue !important;
+}
+
+#mlb2-25949238.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button
+{
+    background-color: $colorBlue !important;
+    max-width: 400px !important;
+}
